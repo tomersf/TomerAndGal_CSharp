@@ -1,0 +1,6 @@
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\bin\Debug\Ex01_05.exe
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\bin\Debug\Ex01_05.pdb
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\obj\Debug\B20_Ex01_5.csprojAssemblyReference.cache
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\obj\Debug\B20_Ex01_5.csproj.CoreCompileInputs.cache
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\obj\Debug\Ex01_05.exe
+C:\Users\Tomer\Source\Repos\TomerAndGal_CSharp\Ex01_05\Ex01_05\obj\Debug\Ex01_05.pdb
