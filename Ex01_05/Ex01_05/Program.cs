@@ -16,7 +16,12 @@ namespace B20_Ex01_5
             StringBuilder inputStringFromUser = new StringBuilder();
             inputStringFromUser.Append(GetStringFromUser());
             ValidateTheNumberFromUser(inputStringFromUser);
+            printLowestDigitAndHighestDigitInTheNumber(inputStringFromUser.ToString());
+
+
+
         }
+
         public static string GetStringFromUser()
         {
             System.Console.WriteLine("Please enter an 9 digit positive number");
@@ -29,18 +34,21 @@ namespace B20_Ex01_5
             bool numberIsValid = int.TryParse(i_NumberFromUser.ToString(), out theNumberFromUser);
             while(!numberIsValid)
             {
-                System.Console.WriteLine("Bad input! you did not enter a number.");
+                System.Console.WriteLine("Bad input! please repeat the process.");
                 i_NumberFromUser.Remove(0, i_NumberFromUser.Length);
                 i_NumberFromUser.Append(GetStringFromUser());
                 numberIsValid = int.TryParse(i_NumberFromUser.ToString(), out theNumberFromUser);
+                if(theNumberFromUser <= 0)
+                {
+                    numberIsValid = false;
+                }
             }
+        }
 
-            if(theNumberFromUser <= 0)
-            {
-
-
-            }
-
+        private static void printLowestDigitAndHighestDigitInTheNumber(string i_StringFromUser)
+        {
+            int highestNumber;
+            
         }
     }
 }
