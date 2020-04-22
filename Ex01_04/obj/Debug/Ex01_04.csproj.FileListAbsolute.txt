@@ -1,0 +1,12 @@
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\bin\Debug\Ex01_04.exe
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\bin\Debug\Ex01_04.pdb
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\obj\Debug\Ex01_04.csprojAssemblyReference.cache
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\obj\Debug\Ex01_04.csproj.CoreCompileInputs.cache
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\obj\Debug\Ex01_04.exe
+C:\Users\Tomer\source\repos\Ex01_04\Ex01_04\obj\Debug\Ex01_04.pdb
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\bin\Debug\Ex01_04.exe
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\bin\Debug\Ex01_04.pdb
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\obj\Debug\Ex01_04.csprojAssemblyReference.cache
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\obj\Debug\Ex01_04.csproj.CoreCompileInputs.cache
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\obj\Debug\Ex01_04.exe
+C:\Users\Tomer\Desktop\TomerAndGal_CSharp-Targil1-Q4\Ex01_04\obj\Debug\Ex01_04.pdb
