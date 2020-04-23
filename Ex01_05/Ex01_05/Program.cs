@@ -35,7 +35,7 @@ namespace B20_Ex01_5
 
             while(!numberIsValid)
             {
-                System.Console.WriteLine("Bad input! please repeat the process.");
+                System.Console.WriteLine("Bad input! please try again.");
                 i_NumberFromUser.Remove(0, i_NumberFromUser.Length);
                 i_NumberFromUser.Append(GetStringFromUser());
                 numberIsValid = int.TryParse(i_NumberFromUser.ToString(), out theNumberFromUser);
