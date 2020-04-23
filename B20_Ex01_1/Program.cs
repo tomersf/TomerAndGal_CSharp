@@ -31,7 +31,7 @@ i_ThirdNumber);
         {
             string numberAsString = Console.ReadLine();
             ushort numberOfDigitsInTheNumber = (ushort)numberAsString.Length;
-            while ((numberOfDigitsInTheNumber != 9) || (IsBinaryNumber(numberAsString, 9) == false))
+            while ((numberOfDigitsInTheNumber != 9) || (IsPositiveBinaryNumber(numberAsString, 9) == false))
             {
                 Console.WriteLine("This number is invalid, please enter again");
                 numberAsString = Console.ReadLine();
@@ -42,29 +42,37 @@ i_ThirdNumber);
             return numberAsInt;
         }
 
-        public static bool IsBinaryNumber(string i_Number, ushort i_LengthOfTheNumber)
+        public static bool IsPositiveBinaryNumber(string i_Number, ushort i_LengthOfTheNumber)
         {
-            bool thisIsBinaryNumber = true;
+            bool thisIsPositiveBinaryNumber = true;
             int numberInInt;
             bool goodInput = int.TryParse(i_Number, out numberInInt);
             if (goodInput == false)
             {
-                thisIsBinaryNumber = false;
+                thisIsPositiveBinaryNumber = false;
             }
 
             eDecimalDigit digitToCheck = (eDecimalDigit)(numberInInt % 10);
-            for (int i = 0; i < i_LengthOfTheNumber && thisIsBinaryNumber; i++)
+            for (int i = 0; i < i_LengthOfTheNumber && thisIsPositiveBinaryNumber; i++)
             {
                 if (digitToCheck != eDecimalDigit.Zero && digitToCheck != eDecimalDigit.One)
                 {
-                    thisIsBinaryNumber = false;
+                    thisIsPositiveBinaryNumber = false;
                 }
 
                 digitToCheck = (eDecimalDigit)(numberInInt % 10);
                 numberInInt /= 10;
             }
 
-            return thisIsBinaryNumber;
+            if(thisIsPositiveBinaryNumber == true)
+            {
+                if(int.Parse(i_Number) == 0)
+                {
+                    thisIsPositiveBinaryNumber = false;
+                }
+            }
+
+            return thisIsPositiveBinaryNumber;
         }
 
         public static ushort FromBinaryToDecimal(int i_Number)
