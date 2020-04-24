@@ -10,7 +10,7 @@ namespace B20_Ex01_3
         {
             uint highOfTheMachine = GetHighFromTheUser();
             StringBuilder sandMachineBuilder = new StringBuilder();
-            B20_Ex01_2.Program.BuildSandMachine(sandMachineBuilder, highOfTheMachine, 0);
+            B20_Ex01_2.Program.BuildSandMachine(ref sandMachineBuilder, highOfTheMachine, 0);
             Console.Write(sandMachineBuilder);
         }
 
