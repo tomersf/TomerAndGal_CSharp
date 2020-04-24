@@ -30,15 +30,32 @@ i_ThirdNumber);
         public static int GetNumbersFromTheUser()
         {
             string numberAsString = Console.ReadLine();
-            ushort numberOfDigitsInTheNumber = (ushort)numberAsString.Length;
+            ushort numberOfDigitsInTheNumber;
+            if (numberAsString == null)
+            {
+                numberOfDigitsInTheNumber = 0;
+            }
+            else
+            {
+             numberOfDigitsInTheNumber = (ushort)numberAsString.Length;
+            }
+
             while ((numberOfDigitsInTheNumber != 9) || (IsPositiveBinaryNumber(numberAsString, 9) == false))
             {
                 Console.WriteLine("This number is invalid, please enter again");
+                
                 numberAsString = Console.ReadLine();
-                numberOfDigitsInTheNumber = (ushort)numberAsString.Length;
+                if(numberAsString == null)
+                {
+                    numberOfDigitsInTheNumber = 0;
+                }
+                else
+                {
+                    numberOfDigitsInTheNumber = (ushort)numberAsString.Length;
+                }
             }
 
-            int numberAsInt = int.Parse(numberAsString);
+            int numberAsInt = int.Parse(numberAsString); // numberAsString cannot be null
             return numberAsInt;
         }
 
@@ -64,12 +81,9 @@ i_ThirdNumber);
                 numberInInt /= 10;
             }
 
-            if(thisIsPositiveBinaryNumber == true)
+            if((thisIsPositiveBinaryNumber == true) && (int.Parse(i_Number) == 0))
             {
-                if(int.Parse(i_Number) == 0)
-                {
-                    thisIsPositiveBinaryNumber = false;
-                }
+                thisIsPositiveBinaryNumber = false;
             }
 
             return thisIsPositiveBinaryNumber;
