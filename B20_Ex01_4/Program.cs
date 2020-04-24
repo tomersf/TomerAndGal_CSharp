@@ -126,9 +126,9 @@ namespace B20_Ex01_4
                     i_StringIsPalindrome = false;
                 }
 
-                if (i_StringIsPalindrome)
+                if (i_StringIsPalindrome == true)
                 {
-                    i_StringIsPalindrome = IsStringPalindromeRec(i_TheString, i_LengthIndex + 1, i_RightIndex - 1, i_StringIsPalindrome);
+                    i_StringIsPalindrome = IsStringPalindromeRec(i_TheString, i_LengthIndex + 1, i_RightIndex - 1, true);
                 }
             }
            
