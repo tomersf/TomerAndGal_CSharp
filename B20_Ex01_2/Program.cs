@@ -8,23 +8,23 @@ namespace B20_Ex01_2
         public static void Main()
         {
             StringBuilder sandMachineBuilder = new StringBuilder();
-            BuildSandMachine(sandMachineBuilder, 5, 0);
+            BuildSandMachine(ref sandMachineBuilder, 5, 0);
             Console.Write(sandMachineBuilder);
         }
 
-        public static void BuildSandMachine(StringBuilder i_SandMachineBuilder, uint i_NumOfAsterisks, uint i_NumberOfSpaces)
+        public static void BuildSandMachine(ref StringBuilder io_SandMachineBuilder, uint i_NumOfAsterisks, uint i_NumberOfSpaces)
         {
             if (i_NumOfAsterisks == 1)
             {
                 string rowOfOneAsterisks = BuildStringOfOneRow(i_NumOfAsterisks, i_NumberOfSpaces);
-                i_SandMachineBuilder.AppendLine(rowOfOneAsterisks);
+                io_SandMachineBuilder.AppendLine(rowOfOneAsterisks);
             }
             else
             {
-                i_SandMachineBuilder.AppendLine(BuildStringOfOneRow(i_NumOfAsterisks, i_NumberOfSpaces));
-                BuildSandMachine(i_SandMachineBuilder, i_NumOfAsterisks - 2, i_NumberOfSpaces + 1);
+                io_SandMachineBuilder.AppendLine(BuildStringOfOneRow(i_NumOfAsterisks, i_NumberOfSpaces));
+                BuildSandMachine(ref io_SandMachineBuilder, i_NumOfAsterisks - 2, i_NumberOfSpaces + 1);
                 string oneRow = BuildStringOfOneRow(i_NumOfAsterisks, i_NumberOfSpaces);
-                i_SandMachineBuilder.AppendLine(oneRow);
+                io_SandMachineBuilder.AppendLine(oneRow);
             }
         }
 

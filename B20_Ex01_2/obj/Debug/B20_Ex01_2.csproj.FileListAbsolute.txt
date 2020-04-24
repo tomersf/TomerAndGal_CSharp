@@ -2,3 +2,4 @@ C:\Users\Boss\Documents\Visual Studio 2017\Projects\B20 Ex01 Gal 315510388 Tomer
 C:\Users\Boss\Documents\Visual Studio 2017\Projects\B20 Ex01 Gal 315510388 Tomer206157281\B20_Ex01_2\bin\Debug\B20_Ex01_2.pdb
 C:\Users\Boss\Documents\Visual Studio 2017\Projects\B20 Ex01 Gal 315510388 Tomer206157281\B20_Ex01_2\obj\Debug\B20_Ex01_2.exe
 C:\Users\Boss\Documents\Visual Studio 2017\Projects\B20 Ex01 Gal 315510388 Tomer206157281\B20_Ex01_2\obj\Debug\B20_Ex01_2.pdb
+C:\Users\Boss\documents\visual studio 2017\Projects\B20 Ex01 Gal 315510388 Tomer206157281\B20_Ex01_2\obj\Debug\B20_Ex01_2.csprojResolveAssemblyReference.cache

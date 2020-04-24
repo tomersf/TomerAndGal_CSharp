@@ -7,7 +7,7 @@
     <timestamps>
       <styleCop>2020/04/13 20:45:17.469</styleCop>
       <settingsFile>2020/04/16 19:45:12.515</settingsFile>
-      <sourceFile>2020/04/22 21:58:54.824</sourceFile>
+      <sourceFile>2020/04/24 15:20:45.871</sourceFile>
       <parser>2020/04/13 20:45:17.469</parser>
       <StyleCop.CSharp.DocumentationRules>2020/04/13 20:45:17.469</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>1472482423</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -26,4 +26,7 @@
     </timestamps>
     <violations />
   </sourcecode>
+  <project key="1755978552">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>
