@@ -18,7 +18,7 @@ namespace B20_Ex01_3
         {
             Console.WriteLine("Enter the high of the sand machine:");
             string machineHigh = Console.ReadLine();
-            while (!IsValidInput(machineHigh))
+            while (IsValidInput(machineHigh)==false)
             {
                 Console.WriteLine("Invalid input,please enter again:");
                 machineHigh = Console.ReadLine();
