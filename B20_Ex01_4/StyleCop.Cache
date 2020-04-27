@@ -1,5 +1,8 @@
 <stylecopresultscache>
   <version>12</version>
+  <project key="608967480">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <project key="-1939203049">
     <configuration>DEBUG;TRACE</configuration>
   </project>
@@ -7,7 +10,7 @@
     <timestamps>
       <styleCop>2020/04/13 20:45:17.469</styleCop>
       <settingsFile>2020/04/16 19:45:12.515</settingsFile>
-      <sourceFile>2020/04/24 15:34:40.225</sourceFile>
+      <sourceFile>2020/04/27 14:11:54.105</sourceFile>
       <parser>2020/04/13 20:45:17.469</parser>
       <StyleCop.CSharp.DocumentationRules>2020/04/13 20:45:17.469</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>1472482423</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -26,7 +29,4 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <project key="608967480">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
 </stylecopresultscache>

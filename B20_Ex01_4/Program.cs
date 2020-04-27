@@ -15,7 +15,7 @@ namespace B20_Ex01_4
             string theString = getStringFromUser();
             bool isStringValid = CheckIfStringIsValid(theString);
 
-            while (!isStringValid)
+            while(!isStringValid)
             {
                 System.Console.WriteLine("Bad input! try again");
                 theString = getStringFromUser();
@@ -24,24 +24,16 @@ namespace B20_Ex01_4
 
             CheckIfStringIsPalindrome(theString);
             bool isStringAnInteger = CheckIfStringIsAnInteger(theString);
-            if (isStringAnInteger)
+            if(isStringAnInteger)
             {
                 checkRemainderByFiveOfString(theString);
             }
-            else
+            else if(CheckIfStringIsOnlyWithLetters(theString) == true)
             {
-                PrintStringIsNotANumber(theString);
-            }
-
-            bool stringHaveOnlyLetters = CheckIfStringIsOnlyWithLetters(theString);
-            int howManyUpperCaseLettersInString = 0;
-
-            if (stringHaveOnlyLetters)
-            {
+                int howManyUpperCaseLettersInString = 0;
                 howManyUpperCaseLettersInString = CountUpperCaseLettersInAString(theString);
+                printHowManyUpperCaseLettersInTheString(howManyUpperCaseLettersInString, theString);
             }
-
-            printHowManyUpperCaseLettersInTheString(howManyUpperCaseLettersInString, theString);
         }
 
         private static string getStringFromUser()
@@ -154,14 +146,6 @@ namespace B20_Ex01_4
 
             string msg = string.Format(remainderIsZero ? "The remainder of string value {0} divided by 5 is zero." : "The remainder of string value {0} divided by 5 is not zero.", i_TheString);
 
-            Console.WriteLine(msg);
-        }
-
-        public static void PrintStringIsNotANumber(string i_TheString)
-        {
-            string msg = string.Format(
-                "The string {0} is not a number.",
-                i_TheString);
             Console.WriteLine(msg);
         }
 
