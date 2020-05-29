@@ -29,8 +29,15 @@ namespace B20_Ex02
 
         public override bool Equals(object i_AnotherCell)
         {
-            ComputerIntelligenceCell SecondCell = (ComputerIntelligenceCell)i_AnotherCell;
-            return m_RowNumber == SecondCell.Row && m_ColNumber == SecondCell.Col;
+            try
+            {
+                ComputerIntelligenceCell secondCell = (ComputerIntelligenceCell)i_AnotherCell;
+                return m_RowNumber == secondCell.Row && m_ColNumber == secondCell.Col;
+            }
+            catch(InvalidCastException ex)
+            {
+                return false;
+            }
         }
         
         public ComputerIntelligenceCell(int i_Row, int i_Col)
